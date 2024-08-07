@@ -21,7 +21,7 @@ https://github.com/csensor/GPT_Voice_Assistant
 {
     "porcupine": {
         "access_key": "",                // porcupine的ak
-        "keywords": [],                  // 可使用 porcupine 内置的唤醒词，否则使用keyword_paths
+        "keywords": ["hello orange"],                  // 可使用 porcupine 内置的唤醒词，否则使用keyword_paths
         "keyword_paths": ["ppn/hello-orange_en_mac_v3_0_0.ppn"], // 项目下自带了唤醒词模型，在resource/ppn 目录下可供选择
         "sensitivities": [0.5]           // 唤醒词阈值，值越高precision越高，反之recall越高
     },
