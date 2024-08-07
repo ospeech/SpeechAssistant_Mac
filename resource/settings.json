@@ -1,0 +1,14 @@
+{
+    "porcupine": {
+        "access_key": "",
+        "keywords": ["hello orange"],
+        "keyword_paths": ["ppn/hello-orange_en_mac_v3_0_0.ppn"],
+        "sensitivities": [0.5]
+    },
+    "nlp_service": {
+        "paddlepaddle": {
+            "asr_url": "http://127.0.0.1:8090/paddlespeech/asr",
+            "tts_url": "http://127.0.0.1:8090/paddlespeech/tts"
+        }
+    }
+}
