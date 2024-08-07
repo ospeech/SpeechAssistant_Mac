@@ -17,8 +17,8 @@ class Pipeline():
         self.nlp_service = NLPService(settings['nlp_service'])
 
     def run(self):
+        logger.info('running,please wake up me...')
         while True:
-            logger.info('running,please wake up me...')
             keyword = self.wakeup_handler.run_detect_wakeup_word()
             if not keyword:
                 continue
