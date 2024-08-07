@@ -1,13 +1,16 @@
-https://user-images.githubusercontent.com/7485678/219089373-18906d4f-a5ab-4a92-936b-ee8126028525.mov
-# GPT_Voice_Assistant
-基于openAI GPT实现的智能交互语音助手,产品主要涉及四个任务：语音唤醒，语音识别，GPT对话，文本转语音
+fork from:
+https://github.com/csensor/GPT_Voice_Assistant
+几点改进：
+1. 修复recorder的bug（CHUNK=512）
+2. 用星火大模型lite（永久免费）代替ChatGPT
+# SpeechAssistant_Mac
+基于星火大模型的智能交互语音助手,产品主要涉及四个任务：语音唤醒，语音识别，GPT对话，文本转语音
 
 # 实现的功能
 通过唤醒词唤醒后，进行语音对话
 
 # 可玩性
-1. 可在PC（笔记本、台式机）实现语音助手功能
-2. 运行在树莓派（Raspberry Pi）增加麦克风+喇叭可实现完整语音助手功能
+可在mac笔记本上实现语音助手功能
 
 # 安装方法
 1. `pip install -r requirements.txt`
@@ -28,9 +31,6 @@ https://user-images.githubusercontent.com/7485678/219089373-18906d4f-a5ab-4a92-9
             "tts_url": "http://x.x.x.x:8090/paddlespeech/tts"   // 自己搭建的paddlespeech的tts服务, x 换成ip地址
         }
     },
-    "openai": {
-        "api_key": "xxxxxxxxxxxx" // openai 上的api key
-    } 
 }
 ```
 
